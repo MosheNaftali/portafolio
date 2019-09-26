@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <title>Portafolio Moshe Shabes Gittler</title>
 </head>
 <body>
-    
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Contacto</a>
+            </nav>
+            
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <h1 class="nombre">Moshe Shabes Gittler</h1>
+                    <h2 class="profesion">Desarrollador Web</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <section class="acerca-de">
+           <div class="contenedor">
+                <div class="foto">
+                    <img src="./files/img/foto.JPG" width="115px" alt="Moshe Shabes">
+                </div>
+                <div class="texto">
+                    <h3 class="titulo">Acerca de</h3>
+                    <p>Lorem ipsum <span class="bold">dolor sit amet</span>,  repellat fugiat molestiae vel, illum, <span class="bold">voluptas sunt fugit</span>, voluptatibus facere architecto.</p>
+                </div>
+            </div>
+        </section>
+        <section class="trabajos">
+            <div class="contenedor">
+                <h3 class="titulo">Trabajos</h3>
+                <div class="contenedor-trabajos">
+                    <div class="trabajo">
+                        <div class="thumb">
+                           <a href="https://koshereats-67779.firebaseapp.com/" target="_blank" rel="noopener noreferrer"><img src="./files/img/trabajo/kosherEats.png" alt="Lorem Ipsum"></a>
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">The Kosher Eats</p>
+                            <p class="descripcion">Replica de Uber Eats.<br>Actualmente se tiene problemas para subir la versión solucionada de Bugs y con muchas mejoras, la cual soluciona problemas de Signin y Signup, las nuevas mejoras incluye subida de archivos, mostrar el menu y ubicación del restaurante.<br>El frontend está hecho con Reactjs, el Backend en Nodejs y la base de datos en MongoDB.</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <a href="https://api-meme-599a9.firebaseapp.com" target="_blank" rel="noopener noreferrer"><img src="./files/img/trabajo/apiMeme.png" alt="Lorem Ipsum"></a>
+                         </div>
+                        <div class="descripcion">
+                            <p class="nombre">Api Meme</p>
+                            <p class="descripcion">Una API la cual la gente puede hacer un CRUD de memes; puede subir un link con el meme, verlo en la página principal, modificarlo o eliminarlo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <section class="contacto">
+            <div class="contenedor">
+                <h3 class="titulo">Contacto</h3>
+                <form action="" class="formulario">
+                    <input type="text" placeholder="Nombre" name="nombre" required>
+                    <input type="email" placeholder="Correo" name="correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <section class="redes-sociales">
+            <div class="contenedor">
+                <a href="https://twitter.com/mosheshabes" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCz2zs8_FbAtIcQhlYBLR8TQ" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.facebook.com/moshnaf" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/moshe.naftali21/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/moshab97" class="github" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
