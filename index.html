@@ -140,7 +140,7 @@
           <form
             id="contact-form"
             class="formulario"
-            onsubmit="emailjs.sendForm('default_service', 'contacto-portafolio', this); return false;"
+            onsubmit="emailjs.sendForm('default_service', 'contacto-portafolio', this); document.getElementById('mensaje-on-submit').style.display = 'block'; return false;"
             method="post"
           >
             <input type="text" placeholder="Nombre" name="nombre" required />
@@ -148,6 +148,12 @@
             <textarea name="mensaje" placeholder="Mensaje:"></textarea>
             <input class="boton" type="submit" value="Enviar" />
           </form>
+          <p
+            id="mensaje-on-submit"
+            style="margin: 5px 0; text-align: center; display: none"
+          >
+            Mensaje enviado exitosamente!!!
+          </p>
         </div>
       </section>
       <section class="redes-sociales">
