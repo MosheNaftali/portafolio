@@ -218,7 +218,25 @@ section {
     transition: color var(--transition-fast);
 }
 
-.nav-links a:hover {
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.lang-toggle:hover {
+    transform: scale(1.1);
     color: var(--accent-color);
 }
 

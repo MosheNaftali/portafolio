@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+    <meta name="description" data-i18n="meta-desc"
         content="Moshe Shabes Gittler - Fullstack Web Developer. Creación de soluciones web modernas, escalables y orientadas a la conversión.">
-    <title>Moshe Shabes | Fullstack Developer</title>
+    <title data-i18n="page-title">Moshe Shabes | Fullstack Developer</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,31 +22,37 @@
         <div class="nav-container">
             <a href="#" class="logo">MSG.</a>
             <div class="nav-links">
-                <a href="#about">Sobre mí</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#contact">Contacto</a>
+                <a href="#about" data-i18n="nav-about">Sobre mí</a>
+                <a href="#projects" data-i18n="nav-projects">Proyectos</a>
+                <a href="#experience" data-i18n="nav-experience">Experiencia</a>
+                <a href="#contact" data-i18n="nav-contact">Contacto</a>
             </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo oscuro/claro">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">
+                    <span id="lang-text">EN</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo oscuro/claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="container hero-content">
-            <p class="hero-greeting">Hola, soy</p>
+            <p class="hero-greeting" data-i18n="hero-greeting">Hola, soy</p>
             <h1 class="hero-name">Moshe Shabes Gittler</h1>
-            <h2 class="hero-role">Fullstack Web Developer</h2>
-            <p class="hero-value">Transformo ideas en experiencias digitales excepcionales. Construyo aplicaciones web
+            <h2 class="hero-role" data-i18n="hero-role">Fullstack Web Developer</h2>
+            <p class="hero-value" data-i18n="hero-value">Transformo ideas en experiencias digitales excepcionales.
+                Construyo aplicaciones web
                 escalables, atractivas y optimizadas para impulsar el éxito de tu negocio.</p>
             <div class="hero-ctas">
-                <a href="#contact" class="btn btn-primary">Contáctame</a>
-                <a href="#projects" class="btn btn-secondary">Ver proyectos</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="hero-cta-contact">Contáctame</a>
+                <a href="#projects" class="btn btn-secondary" data-i18n="hero-cta-projects">Ver proyectos</a>
             </div>
         </div>
     </section>
@@ -54,14 +60,14 @@
     <!-- Sobre Mí Section -->
     <!-- <section class="about reveal" id="about">
         <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
+            <h2 class="section-title" data-i18n="about-title">Sobre mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy un desarrollador apasionado por crear soluciones eficientes a problemas complejos. Mi enfoque principal es aportar <strong>valor real</strong>: no solo escribo código, sino que diseño herramientas digitales que mejoran la experiencia del usuario y optimizan procesos operativos.</p>
-                    <p>Con experiencia tanto en el diseño de interfaces como en la arquitectura de servidores, ofrezco una perspectiva integral para cualquier proyecto web.</p>
+                    <p data-i18n="about-text-1">Soy un desarrollador apasionado por crear soluciones eficientes a problemas complejos. Mi enfoque principal es aportar <strong>valor real</strong>: no solo escribo código, sino que diseño herramientas digitales que mejoran la experiencia del usuario y optimizan procesos operativos.</p>
+                    <p data-i18n="about-text-2">Con experiencia tanto en el diseño de interfaces como en la arquitectura de servidores, ofrezco una perspectiva integral para cualquier proyecto web.</p>
                 </div>
                 <div class="about-skills">
-                    <h3>Skills Principales</h3>
+                    <h3 data-i18n="about-skills-title">Skills Principales</h3>
                     <div class="skills-grid">
                         <div class="skill-category">
                             <h4>Frontend</h4>
@@ -98,7 +104,7 @@
     <!-- Proyectos Section -->
     <section class="projects reveal" id="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 class="section-title" data-i18n="projects-title">Proyectos Destacados</h2>
             <div class="projects-grid">
 
                 <!-- Proyecto 1 -->
@@ -109,7 +115,8 @@
                     </div>
                     <div class="project-info">
                         <h3>Mercado Azul</h3>
-                        <p>Métricas de Mercado Libre México. Muestra los productos más vendidos por categoría,
+                        <p data-i18n="project-1-desc">Métricas de Mercado Libre México. Muestra los productos más
+                            vendidos por categoría,
                             tendencias de búsqueda y recomendaciones basadas en datos.</p>
                         <div class="project-tech">
                             <span>JavaScript</span> <span>API Integration</span> <span>CSS</span>
@@ -130,7 +137,8 @@
                     </div>
                     <div class="project-info">
                         <h3>Enzinga</h3>
-                        <p>Plataforma web para una empresa de logística y envío de pedidos en toda la Ciudad de México,
+                        <p data-i18n="project-2-desc">Plataforma web para una empresa de logística y envío de pedidos en
+                            toda la Ciudad de México,
                             optimizando la gestión de entregas.</p>
                         <div class="project-tech">
                             <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
@@ -151,7 +159,8 @@
                     </div>
                     <div class="project-info">
                         <h3>The Kosher Eats</h3>
-                        <p>Aplicación de delivery de comida. Incluye sistema de autenticación, visualización de menús,
+                        <p data-i18n="project-3-desc">Aplicación de delivery de comida. Incluye sistema de
+                            autenticación, visualización de menús,
                             subida de archivos y geolocalización de restaurantes.</p>
                         <div class="project-tech">
                             <span>React.js</span> <span>Node.js</span> <span>MongoDB</span>
@@ -172,7 +181,8 @@
                     </div>
                     <div class="project-info">
                         <h3>Api Meme</h3>
-                        <p>Aplicación web que permite realizar operaciones CRUD sobre una colección de memes, subiendo
+                        <p data-i18n="project-4-desc">Aplicación web que permite realizar operaciones CRUD sobre una
+                            colección de memes, subiendo
                             enlaces, modificando o eliminando contenido en tiempo real.</p>
                         <div class="project-tech">
                             <span>API REST</span> <span>JavaScript</span> <span>Backend</span>
@@ -192,87 +202,96 @@
     <!-- Experiencia Section -->
     <section class="experience reveal" id="experience">
         <div class="container">
-            <h2 class="section-title">Experiencia Laboral</h2>
+            <h2 class="section-title" data-i18n="experience-title">Experiencia Laboral</h2>
             <div class="timeline">
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Febrero 2024 - Presente</span>
+                        <span class="timeline-date" data-i18n="exp-1-date">Febrero 2024 - Presente</span>
                         <h3>Project Manager & Senior Fullstack Developer</h3>
                         <h4>Mercado Azul</h4>
-                        <p>
-                        <ul>
-                            <li><b>Liderazgo End-to-End: </b>Diseñé y desplegué desde cero la arquitectura cloud,
-                                frontend y backend del MVP, logrando el lanzamiento comercial exitoso de la plataforma
-                                como único desarrollador.</li>
-                            <li><b>Optimización: </b> Automaticé la conciliación fiscal de vendedores de Mercado Libre,
-                                mediante la integración de APIs de Mercado Libre y Mercado Pago, ayudando a eliminar el
-                                100% de los errores manuales y ahorrando múltiples horas diarias a los clientes.</li>
-                            <li><b> Aplicación escalable: </b>Implementé una estructura modular basada en componentes
-                                reutilizables, garantizando un crecimiento sostenido del sistema.</li>
-                        </ul>
-                        </p>
+                        <div data-i18n="exp-1-content">
+                            <ul>
+                                <li><b>Liderazgo End-to-End: </b>Diseñé y desplegué desde cero la arquitectura cloud,
+                                    frontend y backend del MVP, logrando el lanzamiento comercial exitoso de la
+                                    plataforma
+                                    como único desarrollador.</li>
+                                <li><b>Optimización: </b> Automaticé la conciliación fiscal de vendedores de Mercado
+                                    Libre,
+                                    mediante la integración de APIs de Mercado Libre y Mercado Pago, ayudando a eliminar
+                                    el
+                                    100% de los errores manuales y ahorrando múltiples horas diarias a los clientes.
+                                </li>
+                                <li><b> Aplicación escalable: </b>Implementé una estructura modular basada en
+                                    componentes
+                                    reutilizables, garantizando un crecimiento sostenido del sistema.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Noviembre 2022 - Abril 2025</span>
+                        <span class="timeline-date" data-i18n="exp-2-date">Noviembre 2022 - Abril 2025</span>
                         <h3>Senior Fullstack Developer & Project Manager</h3>
                         <h4>Ammper</h4>
-                        <p>
-                        <ul>
-                            <li><b>Rescate de Proyecto Crítico: </b>Optimicé el sistema interno que consiste en el envío
-                                de ofertas al CENACE (mercado eléctrico nacional), logrando una <b>mejora del 95% en
-                                    tiempos de respuesta</b> y asegurando la continuidad del negocio.</li>
-                            <li><b>Eficiencia Operativa: </b>Reduje la carga de trabajo manual del equipo operativo en
-                                un <b>90%</b>, mediante la automatización de flujos repetitivos y la generación
-                                automática de reportes internos y para clientes.</li>
-                            <li><b>Transformación Tecnológica y Mentoría: </b>Tras una rápida especialización autónoma
-                                en Python y AWS, lideré su adopción como estándares de la compañía. En menos de un año,
-                                pasé de la implementación inicial a actuar como referente técnico y supervisor de
-                                calidad para el equipo de ingenieros junior.</li>
-                        </ul>
-                        </p>
+                        <div data-i18n="exp-2-content">
+                            <ul>
+                                <li><b>Rescate de Proyecto Crítico: </b>Optimicé el sistema interno que consiste en el
+                                    envío
+                                    de ofertas al CENACE (mercado eléctrico nacional), logrando una <b>mejora del 95% en
+                                        tiempos de respuesta</b> y asegurando la continuidad del negocio.</li>
+                                <li><b>Eficiencia Operativa: </b>Reduje la carga de trabajo manual del equipo operativo
+                                    en
+                                    un <b>90%</b>, mediante la automatización de flujos repetitivos y la generación
+                                    automática de reportes internos y para clientes.</li>
+                                <li><b>Transformación Tecnológica y Mentoría: </b>Tras una rápida especialización
+                                    autónoma
+                                    en Python y AWS, lideré su adopción como estándares de la compañía. En menos de un
+                                    año,
+                                    pasé de la implementación inicial a actuar como referente técnico y supervisor de
+                                    calidad para el equipo de ingenieros junior.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Octubre 2019 - Noviembre 2022</span>
+                        <span class="timeline-date" data-i18n="exp-3-date">Octubre 2019 - Noviembre 2022</span>
                         <h3>Fullstack Developer & Mobile Developer</h3>
                         <h4>Agencia Digital Creativa</h4>
-                        <p>
-                        <ul>
-                            <li><b>Modernización de Sistemas: </b>Lideré la migración completa de un CRM legado a un
-                                stack moderno (MERN), incrementando drásticamente el rendimiento y la escalabilidad de
-                                la
-                                plataforma.</li>
-                            <li><b>Desarrollo Mobile: </b>Diseñé y ejecuté nuevos módulos para aplicaciones móviles
-                                utilizando React Native e Ionic 3, expandiendo el alcance del producto a dispositivos
-                                iOS y Android.</li>
-                            <li><b></b></li>
-                            <li><b></b></li>
-                        </ul>
-                        </p>
+                        <div data-i18n="exp-3-content">
+                            <ul>
+                                <li><b>Modernización de Sistemas: </b>Lideré la migración completa de un CRM legado a un
+                                    stack moderno (MERN), incrementando drásticamente el rendimiento y la escalabilidad
+                                    de
+                                    la
+                                    plataforma.</li>
+                                <li><b>Desarrollo Mobile: </b>Diseñé y ejecuté nuevos módulos para aplicaciones móviles
+                                    utilizando React Native e Ionic 3, expandiendo el alcance del producto a
+                                    dispositivos
+                                    iOS y Android.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Febrero 2021 - Agosto 2021</span>
-                        <h3>Desarrollador Wordpress (Prácticas universitarias)</h3>
+                        <span class="timeline-date" data-i18n="exp-4-date">Febrero 2021 - Agosto 2021</span>
+                        <h3 data-i18n="exp-4-role">Desarrollador Wordpress (Prácticas universitarias)</h3>
                         <h4>Mercarancho</h4>
-                        <p>
-                        <ul>
-                            <li>Desarrollé una plataforma e-commerce funcional en WordPress al 80%, cubriendo desde
-                                el análisis de requerimientos hasta la implementación técnica.</li>
-                        </ul>
-                        </p>
+                        <div data-i18n="exp-4-content">
+                            <ul>
+                                <li>Desarrollé una plataforma e-commerce funcional en WordPress al 80%, cubriendo desde
+                                    el análisis de requerimientos hasta la implementación técnica.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -285,8 +304,11 @@
         <div class="container">
             <div class="contact-card">
                 <div class="contact-info">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">¿Trabajamos juntos?</h2>
-                    <p>Actualmente estoy abierto a nuevas oportunidades laborales y proyectos freelance. Si tienes una
+                    <h2 class="section-title" style="text-align: center; margin-bottom: 10px;"
+                        data-i18n="contact-title">
+                        ¿Trabajamos juntos?</h2>
+                    <p data-i18n="contact-text">Actualmente estoy abierto a nuevas oportunidades laborales y proyectos
+                        freelance. Si tienes una
                         idea en mente o buscas un desarrollador comprometido, me encantaría escucharte.</p>
 
                     <div class="social-links">
