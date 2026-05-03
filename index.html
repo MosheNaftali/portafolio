@@ -1,214 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/font-awesome.min.css" />
-    <title>Portafolio Moshe Shabes Gittler</title>
-  </head>
-  <body>
-    <header>
-      <div class="contenedor">
-        <nav class="menu">
-          <a href="#acerca_de">Acerca de</a>
-          <a href="#trabajos">Trabajos</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+<html lang="es">
 
-        <div class="contenedor-texto">
-          <div class="texto">
-            <h1 class="nombre">Moshe Shabes Gittler</h1>
-            <h2 class="profesion">Fullstack Web Developer</h2>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Moshe Shabes Gittler - Fullstack Web Developer. Creación de soluciones web modernas, escalables y orientadas a la conversión.">
+    <title>Moshe Shabes | Fullstack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="light-mode">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MSG.</a>
+            <div class="nav-links">
+                <a href="#about">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo oscuro/claro">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-      </div>
-    </header>
-    <section class="main">
-      <section class="acerca-de">
-        <div class="contenedor">
-          <div class="foto">
-            <img src="./files/img/foto.JPG" width="115px" alt="Moshe Shabes" />
-          </div>
-          <div class="texto">
-            <h3 class="titulo" id="acerca_de">Acerca de</h3>
-            <h2 class="cv">Curriculum Vitae</h2>
-            <iframe
-              src="https://onedrive.live.com/embed?cid=91B1C17D25068A1B&resid=91B1C17D25068A1B%218004&authkey=AJQSIByRsVtW07U&em=2"
-              width="100%"
-              height="600"
-              frameborder="0"
-            >
-            </iframe>
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <p class="hero-greeting">Hola, soy</p>
+            <h1 class="hero-name">Moshe Shabes Gittler</h1>
+            <h2 class="hero-role">Fullstack Web Developer</h2>
+            <p class="hero-value">Transformo ideas en experiencias digitales excepcionales. Construyo aplicaciones web
+                escalables, atractivas y optimizadas para impulsar el éxito de tu negocio.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">Contáctame</a>
+                <a href="#projects" class="btn btn-secondary">Ver proyectos</a>
+            </div>
         </div>
-      </section>
-      <section class="trabajos" id="trabajos">
-        <div class="contenedor">
-          <h3 class="titulo">Trabajos</h3>
-          <div class="contenedor-trabajos">
-            <div class="trabajo">
-              <div class="thumb">
-                <a
-                  href="https://mercadoazul.com.mx/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="./files/img/trabajos/mercadoAzul.png"
-                    alt="Mercado Azul"
-                /></a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Mercado Azul</p>
-                <p class="descripcion">
-                  Métricas de Mercado Libre México, mostrando los productos más
-                  vendidos por categoría, los trends en busquedas del día, y
-                  recomendaciones hechas por Mercado Azul.
-                </p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <a
-                  href="https://moshenaftali.github.io/enzinga-front/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img src="./files/img/trabajos/enzinga.png" alt="Enzinga"
-                /></a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Enzinga</p>
-                <p class="descripcion">
-                  Página Web Enzinga; empresa que envía pedidos en toda la
-                  Ciudad de México.
-                </p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <a href="#" rel="noopener noreferrer" disabled="disabled">
-                  <img
-                    src="http://pluspng.com/img-png/chat-png-png-image-512.png"
-                    alt="Chat"
-                  />
-                </a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Chat</p>
-                <p class="descripcion">
-                  Chat en vivo con usuarios y salas en vivo. Falta incluir
-                  diseño, responsive design, y funcionalidades extras.
-                </p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <a href="#" rel="noopener noreferrer" disabled="disabled">
-                  <img
-                    src="./files/img/trabajos/kosherEats.png"
-                    alt="The Kosher Eats"
-                  />
-                </a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">The Kosher Eats</p>
-                <p class="descripcion">
-                  Replica de Uber Eats.<br />Actualmente se tiene problemas para
-                  subir la versión solucionada de Bugs y con muchas mejoras, la
-                  cual soluciona problemas de Signin y Signup, las nuevas
-                  mejoras incluye subida de archivos, mostrar el menu y
-                  ubicación del restaurante.<br />El frontend está hecho con
-                  Reactjs, el Backend en Nodejs y la base de datos en MongoDB.
-                </p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <a href="#" rel="noopener noreferrer"
-                  ><img src="./files/img/trabajos/apiMeme.png" alt="Api Meme"
-                /></a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Api Meme</p>
-                <p class="descripcion">
-                  Una API la cual la gente puede hacer un CRUD de memes; puede
-                  subir un link con el meme, verlo en la página principal,
-                  modificarlo o eliminarlo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </section>
+
+    <!-- Sobre Mí Section -->
+    <!-- <section class="about reveal" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un desarrollador apasionado por crear soluciones eficientes a problemas complejos. Mi enfoque principal es aportar <strong>valor real</strong>: no solo escribo código, sino que diseño herramientas digitales que mejoran la experiencia del usuario y optimizan procesos operativos.</p>
+                    <p>Con experiencia tanto en el diseño de interfaces como en la arquitectura de servidores, ofrezco una perspectiva integral para cualquier proyecto web.</p>
+                </div>
+                <div class="about-skills">
+                    <h3>Skills Principales</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript (ES6+)</span>
+                                <span>React.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>API REST</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Herramientas</h4>
+                            <div class="skill-tags">
+                                <span>Git & GitHub</span>
+                                <span>Figma</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Proyectos Section -->
+    <section class="projects reveal" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./files/img/trabajos/mercadoAzul.png" alt="Mercado Azul"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mercado Azul</h3>
+                        <p>Métricas de Mercado Libre México. Muestra los productos más vendidos por categoría,
+                            tendencias de búsqueda y recomendaciones basadas en datos.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span> <span>API Integration</span> <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mercadoazul.com.mx/" target="_blank" class="btn-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./files/img/trabajos/enzinga.png" alt="Enzinga"
+                            onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Enzinga</h3>
+                        <p>Plataforma web para una empresa de logística y envío de pedidos en toda la Ciudad de México,
+                            optimizando la gestión de entregas.</p>
+                        <div class="project-tech">
+                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://moshenaftali.github.io/enzinga-front/" target="_blank" class="btn-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./files/img/trabajos/kosherEats.png" alt="The Kosher Eats"
+                            onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="project-info">
+                        <h3>The Kosher Eats</h3>
+                        <p>Aplicación de delivery de comida. Incluye sistema de autenticación, visualización de menús,
+                            subida de archivos y geolocalización de restaurantes.</p>
+                        <div class="project-tech">
+                            <span>React.js</span> <span>Node.js</span> <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-link disabled"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./files/img/trabajos/apiMeme.png" alt="Api Meme"
+                            onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Api Meme</h3>
+                        <p>Aplicación web que permite realizar operaciones CRUD sobre una colección de memes, subiendo
+                            enlaces, modificando o eliminando contenido en tiempo real.</p>
+                        <div class="project-tech">
+                            <span>API REST</span> <span>JavaScript</span> <span>Backend</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Section -->
+    <section class="experience reveal" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Febrero 2024 - Presente</span>
+                        <h3>Project Manager & Senior Fullstack Developer</h3>
+                        <h4>Mercado Azul</h4>
+                        <p>
+                        <ul>
+                            <li><b>Liderazgo End-to-End: </b>Diseñé y desplegué desde cero la arquitectura cloud,
+                                frontend y backend del MVP, logrando el lanzamiento comercial exitoso de la plataforma
+                                como único desarrollador.</li>
+                            <li><b>Optimización: </b> Automaticé la conciliación fiscal de vendedores de Mercado Libre,
+                                mediante la integración de APIs de Mercado Libre y Mercado Pago, ayudando a eliminar el
+                                100% de los errores manuales y ahorrando múltiples horas diarias a los clientes.</li>
+                            <li><b> Aplicación escalable: </b>Implementé una estructura modular basada en componentes
+                                reutilizables, garantizando un crecimiento sostenido del sistema.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Noviembre 2022 - Abril 2025</span>
+                        <h3>Senior Fullstack Developer & Project Manager</h3>
+                        <h4>Ammper</h4>
+                        <p>
+                        <ul>
+                            <li><b>Rescate de Proyecto Crítico: </b>Optimicé el sistema interno que consiste en el envío
+                                de ofertas al CENACE (mercado eléctrico nacional), logrando una <b>mejora del 95% en
+                                    tiempos de respuesta</b> y asegurando la continuidad del negocio.</li>
+                            <li><b>Eficiencia Operativa: </b>Reduje la carga de trabajo manual del equipo operativo en
+                                un <b>90%</b>, mediante la automatización de flujos repetitivos y la generación
+                                automática de reportes internos y para clientes.</li>
+                            <li><b>Transformación Tecnológica y Mentoría: </b>Tras una rápida especialización autónoma
+                                en Python y AWS, lideré su adopción como estándares de la compañía. En menos de un año,
+                                pasé de la implementación inicial a actuar como referente técnico y supervisor de
+                                calidad para el equipo de ingenieros junior.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Octubre 2019 - Noviembre 2022</span>
+                        <h3>Fullstack Developer & Mobile Developer</h3>
+                        <h4>Agencia Digital Creativa</h4>
+                        <p>
+                        <ul>
+                            <li><b>Modernización de Sistemas: </b>Lideré la migración completa de un CRM legado a un
+                                stack moderno (MERN), incrementando drásticamente el rendimiento y la escalabilidad de
+                                la
+                                plataforma.</li>
+                            <li><b>Desarrollo Mobile: </b>Diseñé y ejecuté nuevos módulos para aplicaciones móviles
+                                utilizando React Native e Ionic 3, expandiendo el alcance del producto a dispositivos
+                                iOS y Android.</li>
+                            <li><b></b></li>
+                            <li><b></b></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Febrero 2021 - Agosto 2021</span>
+                        <h3>Desarrollador Wordpress (Prácticas universitarias)</h3>
+                        <h4>Mercarancho</h4>
+                        <p>
+                        <ul>
+                            <li>Desarrollé una plataforma e-commerce funcional en WordPress al 80%, cubriendo desde
+                                el análisis de requerimientos hasta la implementación técnica.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contact reveal" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">¿Trabajamos juntos?</h2>
+                    <p>Actualmente estoy abierto a nuevas oportunidades laborales y proyectos freelance. Si tienes una
+                        idea en mente o buscas un desarrollador comprometido, me encantaría escucharte.</p>
+
+                    <div class="social-links">
+                        <a href="mailto:moshnaf@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i>
+                            Email</a>
+                        <a href="https://linkedin.com/in/moshe-naftali" target="_blank" class="social-btn"><i
+                                class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/moshenaftali" target="_blank" class="social-btn"><i
+                                class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <!-- <form class="contact-form" id="contactForm"
+                    onsubmit="event.preventDefault(); alert('Este es un formulario de demostración. Configura tu backend o EmailJS para recibir mensajes.');">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="4" required placeholder="¿En qué te puedo ayudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <section class="contacto" id="contacto">
-        <div class="contenedor">
-          <h3 class="titulo">Contacto</h3>
-          <form
-            id="contact-form"
-            class="formulario"
-            onsubmit="emailjs.sendForm('default_service', 'contacto-portafolio', this); document.getElementById('mensaje-on-submit').style.display = 'block'; return false;"
-            method="post"
-          >
-            <input type="text" placeholder="Nombre" name="nombre" required />
-            <input type="email" placeholder="Correo" name="correo" required />
-            <textarea name="mensaje" placeholder="Mensaje:"></textarea>
-            <input class="boton" type="submit" value="Enviar" />
-          </form>
-          <p
-            id="mensaje-on-submit"
-            style="margin: 5px 0; text-align: center; display: none"
-          >
-            Mensaje enviado exitosamente!!!
-          </p>
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Moshe Shabes Gittler. Todos los derechos reservados.</p>
+            <p class="footer-made-with">Diseñado y construido con ☕ y código limpio.</p>
         </div>
-      </section>
-      <section class="redes-sociales">
-        <div class="contenedor">
-          <a href="http://github.com/moshab97" class="github" target="_blank"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a
-            href="http://www.facebook.com/moshnaf"
-            class="facebook"
-            target="_blank"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a
-            href="http://twitter.com/mosheshabes"
-            class="twitter"
-            target="_blank"
-            ><i class="fa fa-twitter"></i
-          ></a>
-          <!-- <a href="http://www.youtube.com/channel/UCz2zs8_FbAtIcQhlYBLR8TQ" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> -->
-          <a
-            href="http://www.instagram.com/moshe.naftali21/"
-            class="instagram"
-            target="_blank"
-            ><i class="fa fa-instagram"></i
-          ></a>
-        </div>
-      </section>
     </footer>
-    <script
-      type="text/javascript"
-      src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="http://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_YWSm60ejpxc2HtBEWacS3");
-      })();
-    </script>
-  </body>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
 </html>
