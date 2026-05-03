@@ -1,10 +1,4 @@
-// ==========================================
-// PORTFOLIO LOGIC
-// ==========================================
-
 document.addEventListener('DOMContentLoaded', () => {
-
-    // --- 1. I18N (INTERNACIONALIZACIÓN) ---
     const translations = {
         'es': {
             'page-title': 'Moshe Shabes | Fullstack Developer',
@@ -107,13 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLanguage(currentLang);
     });
 
-    // Inicializar idioma
     updateLanguage(currentLang);
 
-    // --- 2. SET CURRENT YEAR IN FOOTER ---
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // --- 3. DARK/LIGHT MODE TOGGLE ---
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
@@ -146,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 4. MOBILE MENU TOGGLE ---
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const menuIcon = menuToggle.querySelector('i');
@@ -173,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 5. SCROLL REVEAL ANIMATION ---
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealOnScroll = () => {
@@ -191,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-    // --- 6. STICKY NAVBAR SHADOW ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
